@@ -1,0 +1,8069 @@
+
+ *------------------------------------------------------------------------------------* 
+ |                                                                                    | 
+ |  *------------------------------------------------------------------------------*  | 
+ |  |                                                                              |  | 
+ |  |                                                                              |  | 
+ |  |   PPP   Y   Y  TTTTT  H   H  III    A      Welcome to the Lund Monte Carlo!  |  | 
+ |  |   P  P   Y Y     T    H   H   I    A A     This is PYTHIA version 8.306      |  | 
+ |  |   PPP     Y      T    HHHHH   I   AAAAA    Last date of change: 28 Jun 2021  |  | 
+ |  |   P       Y      T    H   H   I   A   A                                      |  | 
+ |  |   P       Y      T    H   H  III  A   A    Now is 09 Nov 2021 at 21:43:59    |  | 
+ |  |                                                                              |  | 
+ |  |   Program documentation and an archive of historic versions is found on:     |  | 
+ |  |                                                                              |  | 
+ |  |                               https://pythia.org/                            |  | 
+ |  |                                                                              |  | 
+ |  |   PYTHIA is authored by a collaboration consisting of:                       |  | 
+ |  |                                                                              |  | 
+ |  |   Christian Bierlich, Nishita Desai, Leif Gellersen, Ilkka Helenius, Philip  |  | 
+ |  |   Ilten, Leif Lönnblad, Stephen Mrenna, Stefan Prestel, Christian Preuss,    |  | 
+ |  |   Torbjörn Sjöstrand, Peter Skands, Marius Utheim and Rob Verheyen.          |  | 
+ |  |                                                                              |  | 
+ |  |   The complete list of authors, including contact information and            |  | 
+ |  |   affiliations, can be found on https://pythia.org/.                         |  | 
+ |  |   Problems or bugs should be reported on email at authors@pythia.org.        |  | 
+ |  |                                                                              |  | 
+ |  |   The main program reference is 'An Introduction to PYTHIA 8.2',             |  | 
+ |  |   T. Sjöstrand et al, Comput. Phys. Commun. 191 (2015) 159                   |  | 
+ |  |   [arXiv:1410.3012 [hep-ph]]                                                 |  | 
+ |  |                                                                              |  | 
+ |  |   The main physics reference is the 'PYTHIA 6.4 Physics and Manual',         |  | 
+ |  |   T. Sjöstrand, S. Mrenna and P. Skands, JHEP05 (2006) 026 [hep-ph/0603175]  |  | 
+ |  |                                                                              |  | 
+ |  |   PYTHIA is released under the GNU General Public Licence version 2 or later.|  | 
+ |  |   Please respect the MCnet Guidelines for Event Generator Authors and Users. |  | 
+ |  |                                                                              |  | 
+ |  |   Disclaimer: this program comes without any guarantees.                     |  | 
+ |  |   Beware of errors and use common sense when interpreting results.           |  | 
+ |  |                                                                              |  | 
+ |  |   Copyright (C) 2021 Torbjörn Sjöstrand                                      |  | 
+ |  |                                                                              |  | 
+ |  |                                                                              |  | 
+ |  *------------------------------------------------------------------------------*  | 
+ |                                                                                    | 
+ *------------------------------------------------------------------------------------* 
+
+ PYTHIA Warning in PhaseSpace2to2tauyz::trialKin: maximum for cross section violated  
+
+ *-------  PYTHIA Process Initialization  --------------------------*
+ |                                                                  |
+ | We collide p+ with p+ at a CM energy of 1.400e+04 GeV            |
+ |                                                                  |
+ |------------------------------------------------------------------|
+ |                                                    |             |
+ | Subprocess                                    Code |   Estimated |
+ |                                                    |    max (mb) |
+ |                                                    |             |
+ |------------------------------------------------------------------|
+ |                                                    |             |
+ | g g -> ccbar(3S1)[3S1(1)] g                    401 |   4.246e-02 |
+ | g g -> ccbar(3S1)[3S1(8)] g                    402 |   5.054e-01 |
+ | q g -> ccbar(3S1)[3S1(8)] q                    403 |   1.261e-01 |
+ | q qbar -> ccbar(3S1)[3S1(8)] g                 404 |   5.980e-04 |
+ | g g -> ccbar(3S1)[1S0(8)] g                    405 |   3.485e-01 |
+ | q g -> ccbar(3S1)[1S0(8)] q                    406 |   7.287e-02 |
+ | q qbar -> ccbar(3S1)[1S0(8)] g                 407 |   1.552e-05 |
+ | g g -> ccbar(3S1)[3PJ(8)] g                    408 |   6.630e-01 |
+ | q g -> ccbar(3S1)[3PJ(8)] q                    409 |   1.386e-01 |
+ | q qbar -> ccbar(3S1)[3PJ(8)] g                 410 |   1.533e-04 |
+ | g g -> ccbar(3PJ)[3PJ(1)] g                    411 |   9.000e+00 |
+ | q g -> ccbar(3PJ)[3PJ(1)] q                    412 |   1.789e+00 |
+ | q qbar -> ccbar(3PJ)[3PJ(1)] g                 413 |   1.723e-03 |
+ | g g -> ccbar(3PJ)[3S1(8)] g                    414 |   8.103e-02 |
+ | q g -> ccbar(3PJ)[3S1(8)] q                    415 |   2.056e-02 |
+ | q qbar -> ccbar(3PJ)[3S1(8)] g                 416 |   9.825e-05 |
+ | g g -> ccbar(3DJ)[3DJ(1)] g                    417 |   1.117e-03 |
+ | g g -> ccbar(3DJ)[3PJ(8)] g                    418 |   2.147e-01 |
+ | q g -> ccbar(3DJ)[3PJ(8)] q                    419 |   4.522e-02 |
+ | q qbar -> ccbar(3DJ)[3PJ(8)] g                 420 |   4.635e-05 |
+ | g g -> double ccbar(3S1)[3S1(1)]               421 |   3.797e-04 |
+ | q qbar -> double ccbar(3S1)[3S1(1)]            422 |   2.253e-05 |
+ | g g -> ccbar(3S1)[3S1(1)] gamma                441 |   1.784e-03 |
+ |                                                                  |
+ *-------  End PYTHIA Process Initialization -----------------------*
+
+ *-------  PYTHIA Multiparton Interactions Initialization  ---------* 
+ |                                                                  | 
+ |                   sigmaNonDiffractive =    57.17 mb              | 
+ |                                                                  | 
+ |    pT0 =  2.65 gives sigmaInteraction =   328.62 mb: accepted    | 
+ |                                                                  | 
+ *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
+
+ *-------  PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings (changes only)  ------------------* 
+ |                                                                                                                 | 
+ | Name                                          |                      Now |      Default         Min         Max | 
+ |                                               |                          |                                      | 
+ | Charmonium:all                                |                       on |          off                         | 
+ | Next:numberShowEvent                          |                        0 |            1           0             | 
+ | Next:numberShowInfo                           |                        0 |            1           0             | 
+ | Next:numberShowProcess                        |                        0 |            1           0             | 
+ |                                                                                                                 | 
+ *-------  End PYTHIA Flag + Mode + Parm + Word + FVec + MVec + PVec + WVec Settings  -----------------------------* 
+
+ --------  PYTHIA Particle Data Table (changed only)  ------------------------------------------------------------------------------
+ 
+      id   name            antiName         spn chg col      m0        mWidth      mMin       mMax       tau0    res dec ext vis wid
+             no onMode   bRatio   meMode     products 
+
+ no particle data has been changed from its default value 
+
+ --------  End PYTHIA Particle Data Table  -----------------------------------------------------------------------------------------
+
+pythia id particle: 443
+d1211
+d2-323
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1211
+d21114
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-211
+d2-311
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1-213
+d2113
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1111
+d22112
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1221
+d2111
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1-2112
+d22212
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1111
+d2221
+pythia id particle: 443
+d1-323
+d2325
+pythia id particle: 443
+d1223
+d2223
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1223
+d2211
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1211
+d2113
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d120333
+d2223
+pythia id particle: 443
+d1-213
+d2213
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1223
+d2223
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-323
+d2321
+pythia id particle: 443
+d1221
+d2211
+pythia id particle: 443
+d1-321
+d2313
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1223
+d22212
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-313
+d2321
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1221
+d2-213
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d13212
+d2-311
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-1114
+d22112
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1321
+d2111
+pythia id particle: 443
+d13122
+d2311
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1215
+d2-213
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d13312
+d2321
+pythia id particle: 443
+d1-311
+d2313
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1113
+d2211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1211
+d2113
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1-311
+d2321
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d12114
+d2-2214
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1311
+d2-311
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1223
+d2223
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d12112
+d2211
+pythia id particle: 443
+d1-213
+d2113
+pythia id particle: 443
+d1223
+d2111
+pythia id particle: 443
+d1323
+d2-211
+pythia id particle: 443
+d1213
+d2-213
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1211
+d2-321
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-211
+d2223
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1-313
+d2311
+pythia id particle: 443
+d1-313
+d2323
+pythia id particle: 443
+d1333
+d2311
+pythia id particle: 443
+d1-313
+d2321
+pythia id particle: 443
+d1311
+d23214
+pythia id particle: 443
+d1323
+d2-325
+pythia id particle: 443
+d1111
+d2223
+pythia id particle: 443
+d1311
+d2211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-2114
+d22114
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1211
+d2-323
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1213
+d2-321
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1221
+d2111
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-213
+d2213
+pythia id particle: 443
+d1-2112
+d22212
+pythia id particle: 443
+d1-321
+d2321
+pythia id particle: 443
+d1323
+d2-211
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d1313
+d2213
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-313
+d2321
+pythia id particle: 443
+d1113
+d2211
+pythia id particle: 443
+d1-311
+d2313
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d1-321
+d2323
+pythia id particle: 443
+d1225
+d2223
+pythia id particle: 443
+d1223
+d2211
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1215
+d2-213
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-323
+d2321
+pythia id particle: 443
+d1221
+d2111
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-2212
+d22112
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-311
+d2313
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1-321
+d2321
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1223
+d2-2112
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1-311
+d2321
+ PYTHIA Warning in StringFragmentation::fragmentToJunction: bad convergence junction rest frame  
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-213
+d2213
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-311
+d2321
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d1323
+d2111
+pythia id particle: 443
+d12212
+d2113
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d1313
+d2211
+pythia id particle: 443
+d1223
+d2111
+pythia id particle: 443
+d110213
+d2-211
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d1-321
+d2321
+pythia id particle: 443
+d1213
+d2221
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d12112
+d2221
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1313
+d2-315
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1311
+d2213
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1221
+d2213
+pythia id particle: 443
+d1-211
+d2-311
+pythia id particle: 443
+d12112
+d2213
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1111
+d2221
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1-213
+d2223
+pythia id particle: 443
+d1-2212
+d22212
+pythia id particle: 443
+d1-215
+d2213
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1111
+d2221
+pythia id particle: 443
+d1-311
+d2321
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d12112
+d2111
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1113
+d2211
+pythia id particle: 443
+d1111
+d2221
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d1223
+d2-211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-211
+d2221
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1333
+d2331
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1213
+d2223
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d1225
+d2223
+pythia id particle: 443
+d1-311
+d2313
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1225
+d2223
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-2212
+d22212
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1-323
+d2323
+pythia id particle: 443
+d1-211
+d2-2112
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1223
+d2-213
+pythia id particle: 443
+d1-311
+d2311
+pythia id particle: 443
+d1113
+d2211
+
+ Pythia::next(): 1000 events have been generated 
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-2212
+d22114
+pythia id particle: 443
+d1-311
+d2311
+pythia id particle: 443
+d120323
+d2-321
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1313
+d2-315
+pythia id particle: 443
+d1223
+d2-211
+pythia id particle: 443
+d1221
+d2113
+pythia id particle: 443
+d1313
+d2211
+pythia id particle: 443
+d1211
+d22112
+pythia id particle: 443
+d1221
+d2111
+pythia id particle: 443
+d1-211
+d2-2112
+pythia id particle: 443
+d1223
+d2111
+pythia id particle: 443
+d1-3122
+d23222
+pythia id particle: 443
+d1311
+d2211
+pythia id particle: 443
+d1-20323
+d2321
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1223
+d2213
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1313
+d2223
+pythia id particle: 443
+d1-311
+d2313
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1115
+d2113
+pythia id particle: 443
+d1-2212
+d23122
+pythia id particle: 443
+d1221
+d2111
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-211
+d2221
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1113
+d2113
+pythia id particle: 443
+d1-213
+d2-2112
+pythia id particle: 443
+d1223
+d2-213
+pythia id particle: 443
+d1-211
+d2-2112
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1111
+d2223
+ PYTHIA Warning in Pythia::check: energy-momentum not quite conserved  
+pythia id particle: 443
+d1-2112
+d22212
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1-313
+d2313
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d1221
+d2-2114
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-213
+d2213
+pythia id particle: 443
+d1211
+d2223
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1223
+d2-211
+pythia id particle: 443
+d1111
+d2-321
+pythia id particle: 443
+d1-213
+d2213
+pythia id particle: 443
+d1-313
+d2333
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1333
+d2311
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-321
+d2323
+pythia id particle: 443
+d1-213
+d2213
+ PYTHIA Warning in SimpleSpaceShower::pT2nextQCD: weight above unity  
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1313
+d2111
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1311
+d2-311
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-213
+d2223
+pythia id particle: 443
+d1111
+d2-211
+ PYTHIA Error in StringFragmentation::fragment: stuck in joining  
+ PYTHIA Error in Pythia::next: hadronLevel failed; try again  
+pythia id particle: 443
+d1213
+d2223
+pythia id particle: 443
+d1-211
+d2221
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-211
+d2-311
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1-211
+d2211
+ PYTHIA Warning in Pythia::check: not quite matched particle energy/momentum/mass  
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1-323
+d2323
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1311
+d2-313
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d1-211
+d2-2212
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1-2212
+d22112
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d1111
+d2-321
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d12224
+d2-2224
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1111
+d2-313
+pythia id particle: 443
+d1221
+d2-213
+pythia id particle: 443
+d1221
+d2223
+pythia id particle: 443
+d1321
+d2111
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1113
+d2113
+pythia id particle: 443
+d120323
+d2-321
+pythia id particle: 443
+d1-213
+d2-311
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d12212
+d2-211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1111
+d22214
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d1111
+d2331
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d1221
+d2-213
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d12112
+d2211
+pythia id particle: 443
+d1-323
+d2325
+pythia id particle: 443
+d1215
+d2-213
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d1321
+d2111
+pythia id particle: 443
+d1-211
+d2221
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1211
+d2223
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d12212
+d2111
+pythia id particle: 443
+d1223
+d2-211
+pythia id particle: 443
+d1211
+d2-323
+pythia id particle: 443
+d1221
+d2111
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1-321
+d2321
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1221
+d2-211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1323
+d2-325
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-2212
+d22112
+pythia id particle: 443
+d1223
+d2223
+pythia id particle: 443
+d1221
+d2111
+pythia id particle: 443
+d1223
+d2213
+pythia id particle: 443
+d1311
+d2211
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d1-211
+d2-311
+pythia id particle: 443
+d1323
+d2-211
+pythia id particle: 443
+d1-321
+d2313
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1-323
+d2313
+pythia id particle: 443
+d1313
+d2-315
+pythia id particle: 443
+d1221
+d2211
+pythia id particle: 443
+d1211
+d2-321
+pythia id particle: 443
+d1-211
+d2223
+pythia id particle: 443
+d1213
+d2221
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1313
+d2-315
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1-321
+d2321
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1223
+d2111
+pythia id particle: 443
+d1313
+d2-315
+pythia id particle: 443
+d1211
+d2223
+pythia id particle: 443
+d1-323
+d2321
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1321
+d23112
+pythia id particle: 443
+d1223
+d2211
+pythia id particle: 443
+d1311
+d2111
+pythia id particle: 443
+d1-311
+d2311
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1321
+d2223
+pythia id particle: 443
+d1221
+d2213
+pythia id particle: 443
+d1-213
+d2113
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d13212
+d2211
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1211
+d2-321
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1223
+d2111
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1211
+d2-321
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-213
+d2-311
+pythia id particle: 443
+d1-211
+d2223
+pythia id particle: 443
+d111
+d2-11
+
+ Pythia::next(): 2000 events have been generated 
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-213
+d2213
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1-211
+d2-2212
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1111
+d2223
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1221
+d2223
+pythia id particle: 443
+d110113
+d2111
+pythia id particle: 443
+d1221
+d2-211
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1113
+d2223
+pythia id particle: 443
+d1-323
+d2313
+pythia id particle: 443
+d1213
+d2-213
+pythia id particle: 443
+d1-211
+d2223
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1-213
+d2113
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-313
+d2321
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1223
+d2211
+pythia id particle: 443
+d1223
+d2221
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1113
+d2-313
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1221
+d2211
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d1113
+d2-311
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1311
+d2211
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1111
+d2-3112
+pythia id particle: 443
+d1221
+d2211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d1-215
+d2213
+pythia id particle: 443
+d1-323
+d2321
+pythia id particle: 443
+d12224
+d2-2224
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1313
+d2211
+pythia id particle: 443
+d1313
+d2-315
+pythia id particle: 443
+d1111
+d22214
+pythia id particle: 443
+d1211
+d2-323
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1111
+d2221
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d12212
+d2-213
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-213
+d2223
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1223
+d2213
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1211
+d2-2212
+pythia id particle: 443
+d1111
+d2-313
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1311
+d2-313
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-2212
+d22212
+pythia id particle: 443
+d1311
+d2211
+pythia id particle: 443
+d1-213
+d2223
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1221
+d2-211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1223
+d2213
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d12112
+d2113
+pythia id particle: 443
+d1111
+d2223
+pythia id particle: 443
+d12112
+d2111
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1211
+d2113
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1113
+d2221
+pythia id particle: 443
+d1211
+d2223
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1-2212
+d22112
+pythia id particle: 443
+d1321
+d2-323
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-215
+d2213
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-211
+d2221
+pythia id particle: 443
+d1111
+d2223
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1111
+d2221
+pythia id particle: 443
+d13314
+d2-3314
+pythia id particle: 443
+d1321
+d2113
+pythia id particle: 443
+d1321
+d2111
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1111
+d2-313
+pythia id particle: 443
+d1221
+d2111
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d1321
+d2223
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d1113
+d2211
+pythia id particle: 443
+d1221
+d2211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d1311
+d2113
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1215
+d2-213
+pythia id particle: 443
+d12212
+d2111
+pythia id particle: 443
+d1311
+d2-311
+pythia id particle: 443
+d13112
+d2-311
+pythia id particle: 443
+d110113
+d2111
+pythia id particle: 443
+d1111
+d2221
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-211
+d2-1114
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1111
+d2223
+pythia id particle: 443
+d1321
+d2223
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1-2112
+d22112
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d12212
+d2-211
+pythia id particle: 443
+d1221
+d2-321
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1113
+d2223
+pythia id particle: 443
+d1211
+d22214
+pythia id particle: 443
+d1111
+d2221
+pythia id particle: 443
+d1321
+d2111
+pythia id particle: 443
+d1111
+d2221
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1111
+d2-311
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1113
+d2-323
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1211
+d2-321
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1211
+d2-321
+pythia id particle: 443
+d1323
+d2221
+pythia id particle: 443
+d1-211
+d2223
+pythia id particle: 443
+d1321
+d2111
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1-321
+d2333
+pythia id particle: 443
+d1-2212
+d22212
+pythia id particle: 443
+d1213
+d2113
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1223
+d2221
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1313
+d2213
+pythia id particle: 443
+d1113
+d2113
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1223
+d2223
+pythia id particle: 443
+d1311
+d2211
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1-323
+d2311
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1213
+d2223
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1-311
+d2311
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d12224
+d2-211
+pythia id particle: 443
+d1313
+d2-315
+pythia id particle: 443
+d1223
+d2111
+pythia id particle: 443
+d1321
+d2113
+pythia id particle: 443
+d1-211
+d22212
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1-215
+d2213
+pythia id particle: 443
+d1111
+d2-2214
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d1-321
+d2321
+pythia id particle: 443
+d1111
+d2-321
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1323
+d2-213
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1321
+d2111
+pythia id particle: 443
+d1111
+d2221
+pythia id particle: 443
+d1211
+d2-323
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1211
+d2111
+
+ Pythia::next(): 3000 events have been generated 
+pythia id particle: 443
+d1113
+d2211
+pythia id particle: 443
+d1113
+d2223
+pythia id particle: 443
+d1-211
+d22224
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d1-211
+d2-2112
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1313
+d2223
+pythia id particle: 443
+d1-213
+d2221
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-211
+d2221
+pythia id particle: 443
+d1-311
+d2311
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1313
+d2-315
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1211
+d2223
+pythia id particle: 443
+d1311
+d2211
+pythia id particle: 443
+d1211
+d22114
+pythia id particle: 443
+d1221
+d2111
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1321
+d2111
+pythia id particle: 443
+d1-321
+d2333
+pythia id particle: 443
+d1223
+d2113
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1221
+d2-211
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1311
+d2111
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d1213
+d2223
+pythia id particle: 443
+d1223
+d2-321
+pythia id particle: 443
+d1-2212
+d22112
+pythia id particle: 443
+d1111
+d22224
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-211
+d2-313
+pythia id particle: 443
+d1-311
+d2313
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-321
+d2313
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1113
+d2113
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1223
+d2111
+pythia id particle: 443
+d1211
+d2-321
+pythia id particle: 443
+d1-1114
+d21114
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-211
+d22214
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1311
+d2111
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1211
+d2-321
+pythia id particle: 443
+d1211
+d2113
+pythia id particle: 443
+d1323
+d2111
+pythia id particle: 443
+d1-211
+d2221
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-311
+d2313
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1331
+d2111
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-211
+d2221
+pythia id particle: 443
+d1323
+d2111
+pythia id particle: 443
+d1213
+d2113
+pythia id particle: 443
+d1-311
+d2311
+pythia id particle: 443
+d1223
+d2211
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d1-313
+d2323
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1-313
+d2321
+pythia id particle: 443
+d1333
+d2335
+pythia id particle: 443
+d1211
+d2113
+pythia id particle: 443
+d1-311
+d2323
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1-213
+d2-311
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1113
+d2221
+pythia id particle: 443
+d1-2112
+d22112
+pythia id particle: 443
+d1-311
+d2321
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1323
+d2-325
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1111
+d21114
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1213
+d2-213
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1223
+d2221
+pythia id particle: 443
+d1-321
+d2323
+pythia id particle: 443
+d1113
+d2211
+pythia id particle: 443
+d1-211
+d22214
+pythia id particle: 443
+d1215
+d2-213
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1-213
+d2-311
+pythia id particle: 443
+d1211
+d21114
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1113
+d2221
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1223
+d2111
+pythia id particle: 443
+d1223
+d2-311
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1311
+d2221
+pythia id particle: 443
+d1221
+d2-211
+pythia id particle: 443
+d1223
+d2111
+pythia id particle: 443
+d1311
+d2111
+pythia id particle: 443
+d1311
+d2213
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1-321
+d2323
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d120323
+d2-321
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1211
+d2-321
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d13112
+d2-3112
+pythia id particle: 443
+d1221
+d2-321
+pythia id particle: 443
+d1-323
+d2311
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d12212
+d2-211
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-3322
+d23212
+pythia id particle: 443
+d1311
+d2-313
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1311
+d2-311
+pythia id particle: 443
+d1311
+d2221
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-313
+d2321
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1211
+d2223
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1311
+d2213
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1321
+d2111
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1111
+d2-311
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1113
+d2213
+pythia id particle: 443
+d1211
+d2-321
+pythia id particle: 443
+d1-211
+d2-2112
+pythia id particle: 443
+d1211
+d2113
+pythia id particle: 443
+d1-10213
+d2211
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1323
+d2-325
+pythia id particle: 443
+d1223
+d2211
+pythia id particle: 443
+d1211
+d2-321
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-313
+d2311
+pythia id particle: 443
+d1221
+d2-213
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1211
+d2-321
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1223
+d2111
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1223
+d2211
+pythia id particle: 443
+d1-211
+d2221
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1223
+d2-211
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1-211
+d2-2112
+pythia id particle: 443
+d1223
+d2113
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d110113
+d2111
+pythia id particle: 443
+d1311
+d2211
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1213
+d2223
+pythia id particle: 443
+d1113
+d22212
+pythia id particle: 443
+d1211
+d2-321
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1115
+d2113
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d12212
+d2221
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-213
+d2221
+pythia id particle: 443
+d1211
+d21114
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1311
+d2113
+pythia id particle: 443
+d1321
+d2-323
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-321
+d2313
+pythia id particle: 443
+d12112
+d2213
+
+ Pythia::next(): 4000 events have been generated 
+pythia id particle: 443
+d1321
+d2-323
+pythia id particle: 443
+d1221
+d2211
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1-2212
+d22112
+pythia id particle: 443
+d1221
+d2211
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1211
+d2-2114
+pythia id particle: 443
+d1223
+d2211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d110331
+d2223
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1111
+d2-323
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-321
+d2323
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-2212
+d22212
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1-323
+d2323
+pythia id particle: 443
+d1111
+d2-321
+pythia id particle: 443
+d1321
+d2-323
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1-211
+d2-311
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1331
+d2211
+pythia id particle: 443
+d1111
+d2-311
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1225
+d2223
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1111
+d22112
+pythia id particle: 443
+d1113
+d2223
+pythia id particle: 443
+d1223
+d2-213
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1311
+d2-311
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d1-211
+d2223
+pythia id particle: 443
+d1311
+d2-313
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1-211
+d22112
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1211
+d2223
+pythia id particle: 443
+d12212
+d2-211
+pythia id particle: 443
+d12212
+d2223
+pythia id particle: 443
+d1-211
+d2221
+pythia id particle: 443
+d1223
+d2-211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1313
+d2-311
+pythia id particle: 443
+d1213
+d2-213
+pythia id particle: 443
+d1-213
+d2-2112
+pythia id particle: 443
+d1-213
+d2211
+ PYTHIA Warning in TauDecays::decay: unknown correlated tau production, assuming from unpolarized photon  
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1211
+d2-2214
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1113
+d2-321
+pythia id particle: 443
+d1331
+d2-213
+pythia id particle: 443
+d1321
+d2113
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d13112
+d2211
+pythia id particle: 443
+d1-211
+d2-313
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1221
+d2331
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1-2114
+d22114
+pythia id particle: 443
+d1-313
+d2313
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d1-321
+d2321
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-2212
+d22212
+pythia id particle: 443
+d1221
+d2311
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d1223
+d2211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1221
+d2221
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1-215
+d2213
+pythia id particle: 443
+d1-211
+d2-313
+pythia id particle: 443
+d1-313
+d2321
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1-211
+d2-2112
+pythia id particle: 443
+d1211
+d2223
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1321
+d2-321
+pythia id particle: 443
+d1-321
+d2321
+pythia id particle: 443
+d1113
+d2213
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d1223
+d2211
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1221
+d2111
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d1-313
+d2321
+pythia id particle: 443
+d1331
+d2311
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-2112
+d22112
+pythia id particle: 443
+d1-311
+d2221
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1-3112
+d23112
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1311
+d2213
+pythia id particle: 443
+d1-2212
+d22112
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-211
+d2221
+pythia id particle: 443
+d1-211
+d2-311
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1-321
+d2313
+pythia id particle: 443
+d1-211
+d2221
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-313
+d2321
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d1111
+d2-313
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1211
+d2113
+pythia id particle: 443
+d1-20323
+d2321
+pythia id particle: 443
+d1311
+d2211
+pythia id particle: 443
+d1-311
+d2311
+pythia id particle: 443
+d1113
+d2-213
+pythia id particle: 443
+d1-1114
+d22112
+pythia id particle: 443
+d1-213
+d2221
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1113
+d2-313
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1111
+d2-311
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1221
+d2-211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1311
+d2113
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1213
+d2113
+pythia id particle: 443
+d1113
+d2223
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1-211
+d2-2114
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1211
+d2113
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d1-311
+d2311
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1333
+d2311
+pythia id particle: 443
+d1-3122
+d23114
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1321
+d2221
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1321
+d2223
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1225
+d2223
+pythia id particle: 443
+d12212
+d2-211
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d1-3112
+d23212
+pythia id particle: 443
+d1-2212
+d22112
+pythia id particle: 443
+d1-311
+d2-3114
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1-211
+d2223
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1111
+d2221
+pythia id particle: 443
+d1211
+d22114
+pythia id particle: 443
+d1311
+d2-313
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1-2112
+d22212
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d1311
+d2223
+pythia id particle: 443
+d1-323
+d2321
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1311
+d2111
+pythia id particle: 443
+d1-2212
+d22212
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d1-311
+d2323
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-213
+d2221
+pythia id particle: 443
+d1221
+d2211
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1-211
+d2211
+
+ Pythia::next(): 5000 events have been generated 
+pythia id particle: 443
+d1311
+d2211
+pythia id particle: 443
+d12212
+d2111
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1213
+d2-321
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d1-321
+d2323
+pythia id particle: 443
+d1211
+d2-2212
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1-311
+d21114
+pythia id particle: 443
+d1111
+d2-3212
+pythia id particle: 443
+d1-20323
+d2321
+pythia id particle: 443
+d12224
+d2-2224
+pythia id particle: 443
+d1211
+d2113
+pythia id particle: 443
+d1215
+d2-213
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1221
+d2-211
+pythia id particle: 443
+d12212
+d2-211
+pythia id particle: 443
+d1321
+d2-321
+pythia id particle: 443
+d1-211
+d22224
+pythia id particle: 443
+d1223
+d2221
+pythia id particle: 443
+d1113
+d2221
+pythia id particle: 443
+d1221
+d2211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1111
+d2-2212
+pythia id particle: 443
+d1213
+d2-321
+pythia id particle: 443
+d1223
+d2211
+pythia id particle: 443
+d1-213
+d2213
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-2212
+d22212
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-211
+d2223
+pythia id particle: 443
+d1-321
+d2313
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d110113
+d2111
+pythia id particle: 443
+d1211
+d2-321
+pythia id particle: 443
+d1113
+d22112
+pythia id particle: 443
+d1311
+d2-313
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1-321
+d2323
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1323
+d2-325
+pythia id particle: 443
+d1-311
+d2311
+pythia id particle: 443
+d1321
+d2113
+pythia id particle: 443
+d1113
+d2-311
+pythia id particle: 443
+d1333
+d2221
+pythia id particle: 443
+d1311
+d2111
+pythia id particle: 443
+d1311
+d2213
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-213
+d2113
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1311
+d2-313
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-211
+d2-311
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1111
+d22114
+pythia id particle: 443
+d1221
+d2111
+pythia id particle: 443
+d1223
+d2-2212
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1225
+d2223
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1-323
+d2311
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1111
+d2221
+pythia id particle: 443
+d1321
+d2-213
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1223
+d2-211
+pythia id particle: 443
+d1221
+d2211
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d1-323
+d2311
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d1-3212
+d23222
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1221
+d2111
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1221
+d2311
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1-211
+d2-2112
+pythia id particle: 443
+d1211
+d2223
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d1-3212
+d23222
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1111
+d2-2224
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1-323
+d2311
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1221
+d2113
+pythia id particle: 443
+d1223
+d2111
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1223
+d2-211
+pythia id particle: 443
+d1111
+d2-311
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1313
+d2-315
+pythia id particle: 443
+d1-1114
+d22114
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1323
+d2-211
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1331
+d2-211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-311
+d2321
+pythia id particle: 443
+d1223
+d2213
+pythia id particle: 443
+d1-311
+d2323
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1-313
+d2333
+pythia id particle: 443
+d1-2212
+d22112
+pythia id particle: 443
+d1221
+d2211
+pythia id particle: 443
+d12112
+d2111
+pythia id particle: 443
+d1211
+d2-323
+pythia id particle: 443
+d1-213
+d2223
+pythia id particle: 443
+d1323
+d2111
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1223
+d2113
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d1211
+d2223
+pythia id particle: 443
+d1-10213
+d2211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1313
+d2211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1113
+d2213
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1-213
+d2223
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1111
+d2223
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1221
+d2-2112
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1313
+d23212
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1223
+d2-211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1225
+d2223
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-323
+d2313
+pythia id particle: 443
+d1225
+d2223
+pythia id particle: 443
+d1213
+d2-321
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-211
+d2221
+pythia id particle: 443
+d1-2212
+d22112
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-211
+d2223
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-311
+d2321
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1-3212
+d23112
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-211
+d2-313
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1221
+d22112
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d12112
+d2111
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d1-211
+d22112
+pythia id particle: 443
+d1211
+d2-321
+pythia id particle: 443
+d12114
+d2211
+pythia id particle: 443
+d1311
+d2113
+pythia id particle: 443
+d1223
+d2331
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1221
+d2113
+pythia id particle: 443
+d1-211
+d22214
+pythia id particle: 443
+d1221
+d2-211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1111
+d2221
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-321
+d2321
+pythia id particle: 443
+d12224
+d2-2224
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1311
+d2111
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d1323
+d2-325
+pythia id particle: 443
+d1211
+d2-2214
+pythia id particle: 443
+d1-20323
+d2321
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1113
+d2213
+pythia id particle: 443
+d1321
+d2-2214
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-311
+d2321
+pythia id particle: 443
+d1-3212
+d23222
+pythia id particle: 443
+d1-213
+d2-311
+pythia id particle: 443
+d1313
+d2223
+pythia id particle: 443
+d1111
+d22212
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-2112
+d22212
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1221
+d2-211
+pythia id particle: 443
+d1113
+d2-311
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-311
+d2333
+pythia id particle: 443
+d1321
+d2111
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-211
+d2223
+
+ Pythia::next(): 6000 events have been generated 
+pythia id particle: 443
+d1113
+d2223
+pythia id particle: 443
+d1-321
+d2323
+pythia id particle: 443
+d120323
+d2-321
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1-311
+d2321
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d1-313
+d2323
+pythia id particle: 443
+d1213
+d2331
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1333
+d2221
+pythia id particle: 443
+d1221
+d2211
+pythia id particle: 443
+d1113
+d2211
+pythia id particle: 443
+d1211
+d2-323
+pythia id particle: 443
+d1-323
+d2321
+pythia id particle: 443
+d1213
+d2-213
+pythia id particle: 443
+d1311
+d2211
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1213
+d2-321
+pythia id particle: 443
+d1-323
+d2321
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1321
+d2-323
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1111
+d2-323
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1111
+d21114
+pythia id particle: 443
+d12212
+d2111
+pythia id particle: 443
+d1-211
+d2221
+pythia id particle: 443
+d1211
+d22114
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1221
+d2211
+pythia id particle: 443
+d1323
+d2111
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1111
+d21114
+pythia id particle: 443
+d1221
+d2111
+pythia id particle: 443
+d1311
+d2211
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1111
+d21114
+pythia id particle: 443
+d1-2212
+d22212
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1-311
+d2321
+pythia id particle: 443
+d1221
+d2223
+pythia id particle: 443
+d1213
+d2-2212
+pythia id particle: 443
+d1113
+d2213
+pythia id particle: 443
+d1223
+d2213
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d12212
+d2-321
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1311
+d2213
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1221
+d2113
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d1211
+d2113
+pythia id particle: 443
+d1113
+d2211
+pythia id particle: 443
+d1-213
+d2113
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1313
+d2-315
+pythia id particle: 443
+d12214
+d2211
+pythia id particle: 443
+d1213
+d2-213
+pythia id particle: 443
+d1-213
+d2221
+pythia id particle: 443
+d1331
+d2-313
+pythia id particle: 443
+d1223
+d2-311
+pythia id particle: 443
+d1-3112
+d23212
+pythia id particle: 443
+d1113
+d2-321
+pythia id particle: 443
+d1223
+d2211
+pythia id particle: 443
+d13122
+d2311
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1223
+d2111
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d1-311
+d2321
+pythia id particle: 443
+d1211
+d2113
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1333
+d2321
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1-321
+d2321
+pythia id particle: 443
+d12212
+d2-211
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1113
+d2-213
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1311
+d2111
+pythia id particle: 443
+d1211
+d2-3222
+pythia id particle: 443
+d1-311
+d2321
+pythia id particle: 443
+d1-213
+d2223
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d13212
+d2-3212
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1113
+d2223
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1223
+d2213
+pythia id particle: 443
+d1223
+d2111
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-323
+d2321
+pythia id particle: 443
+d1321
+d2-323
+pythia id particle: 443
+d1213
+d2-321
+pythia id particle: 443
+d1-211
+d2221
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1-213
+d2213
+pythia id particle: 443
+d1-311
+d2311
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-211
+d22214
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1211
+d2-321
+pythia id particle: 443
+d1213
+d2223
+pythia id particle: 443
+d1211
+d22112
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1223
+d2-313
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1211
+d2-2212
+pythia id particle: 443
+d1221
+d2113
+pythia id particle: 443
+d1323
+d2221
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1111
+d2221
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d1113
+d2221
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d1211
+d2-321
+pythia id particle: 443
+d1-213
+d2213
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1321
+d2111
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-323
+d2323
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d1213
+d2223
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1223
+d2113
+pythia id particle: 443
+d1223
+d2-211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1321
+d2113
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d1111
+d2221
+pythia id particle: 443
+d1213
+d2-213
+pythia id particle: 443
+d1-321
+d2321
+pythia id particle: 443
+d1211
+d22114
+pythia id particle: 443
+d110213
+d2-211
+pythia id particle: 443
+d110213
+d2-211
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d1311
+d2-311
+pythia id particle: 443
+d1113
+d22112
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1-321
+d2321
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d1-2112
+d22212
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d13122
+d2311
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1215
+d2-213
+pythia id particle: 443
+d1211
+d2-2212
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1311
+d2223
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1211
+d2223
+pythia id particle: 443
+d1213
+d2-213
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1113
+d2223
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1311
+d2211
+pythia id particle: 443
+d1113
+d2-213
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-211
+d22212
+pythia id particle: 443
+d1323
+d2-211
+pythia id particle: 443
+d1321
+d2-2212
+pythia id particle: 443
+d1321
+d2113
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1321
+d2111
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-321
+d2321
+pythia id particle: 443
+d1-211
+d2223
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1211
+d2-211
+
+ Pythia::next(): 7000 events have been generated 
+pythia id particle: 443
+d1-321
+d2321
+pythia id particle: 443
+d1223
+d2213
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-213
+d2213
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-321
+d2321
+pythia id particle: 443
+d1211
+d22114
+pythia id particle: 443
+d1111
+d2-311
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1321
+d2113
+pythia id particle: 443
+d1223
+d2211
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1-2112
+d22212
+pythia id particle: 443
+d1211
+d2113
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1333
+d2321
+pythia id particle: 443
+d1211
+d22212
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1211
+d2223
+pythia id particle: 443
+d1-213
+d2113
+pythia id particle: 443
+d13122
+d2311
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1113
+d2113
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1111
+d2223
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d1223
+d2223
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1-321
+d2321
+pythia id particle: 443
+d1113
+d2211
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1221
+d2111
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-3222
+d23212
+pythia id particle: 443
+d1211
+d2223
+pythia id particle: 443
+d1321
+d2-213
+pythia id particle: 443
+d1-211
+d2-311
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1-213
+d2221
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1-213
+d2-2112
+pythia id particle: 443
+d1211
+d22114
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d12212
+d2-321
+pythia id particle: 443
+d1113
+d2211
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d1111
+d22212
+pythia id particle: 443
+d1311
+d2213
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1221
+d2-321
+pythia id particle: 443
+d1321
+d2-323
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1213
+d2-213
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1111
+d2223
+pythia id particle: 443
+d1-211
+d2-2112
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1-211
+d2221
+pythia id particle: 443
+d1-313
+d2321
+pythia id particle: 443
+d1111
+d22212
+pythia id particle: 443
+d1213
+d2-213
+pythia id particle: 443
+d1-213
+d2213
+pythia id particle: 443
+d1-323
+d2311
+pythia id particle: 443
+d1-311
+d2311
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1113
+d2-3122
+pythia id particle: 443
+d1-323
+d2323
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1321
+d2111
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1111
+d2223
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-2112
+d23122
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-211
+d2223
+pythia id particle: 443
+d1-311
+d2313
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1111
+d2223
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-3112
+d23212
+pythia id particle: 443
+d1215
+d2-213
+pythia id particle: 443
+d1211
+d22114
+pythia id particle: 443
+d1-211
+d22224
+pythia id particle: 443
+d1-313
+d2311
+pythia id particle: 443
+d1-311
+d2321
+pythia id particle: 443
+d1221
+d2221
+pythia id particle: 443
+d1111
+d2-313
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1223
+d2-211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1321
+d23312
+pythia id particle: 443
+d12112
+d2211
+pythia id particle: 443
+d13222
+d2321
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1211
+d2113
+pythia id particle: 443
+d1-2112
+d22112
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1323
+d2-321
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1223
+d2211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-2224
+d22224
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1221
+d2211
+pythia id particle: 443
+d1221
+d2321
+pythia id particle: 443
+d1-213
+d2113
+pythia id particle: 443
+d1111
+d2223
+pythia id particle: 443
+d1111
+d22214
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1211
+d2223
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1-211
+d2-2112
+pythia id particle: 443
+d1-321
+d2321
+pythia id particle: 443
+d1221
+d2221
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-311
+d2313
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d120323
+d2-321
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1211
+d2-321
+pythia id particle: 443
+d1113
+d2211
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1111
+d22212
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1111
+d2-2112
+pythia id particle: 443
+d1211
+d2-323
+pythia id particle: 443
+d1223
+d2211
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1321
+d2-213
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1113
+d2-321
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1-311
+d2313
+pythia id particle: 443
+d1323
+d2111
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-211
+d22214
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d1213
+d2-321
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1221
+d2-311
+pythia id particle: 443
+d1211
+d2331
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-213
+d2213
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1323
+d2111
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1211
+d2113
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-311
+d2321
+pythia id particle: 443
+d1313
+d2111
+pythia id particle: 443
+d1-323
+d2321
+pythia id particle: 443
+d1211
+d2-323
+pythia id particle: 443
+d1211
+d21114
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1221
+d2211
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1-2212
+d22212
+pythia id particle: 443
+d120333
+d2223
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d12112
+d2211
+pythia id particle: 443
+d1213
+d2223
+pythia id particle: 443
+d1-2112
+d22114
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1-2212
+d22212
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1223
+d2213
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1-2212
+d22112
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1213
+d2-323
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d1-321
+d2323
+pythia id particle: 443
+d1113
+d2113
+pythia id particle: 443
+d1111
+d2-2212
+pythia id particle: 443
+d1313
+d2-311
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1111
+d2221
+pythia id particle: 443
+d1-211
+d2-311
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d120323
+d2-321
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1333
+d2311
+pythia id particle: 443
+d1323
+d2221
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1333
+d2313
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1223
+d2-211
+pythia id particle: 443
+d1221
+d2-211
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1213
+d2-213
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-323
+d2311
+
+ Pythia::next(): 8000 events have been generated 
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-2112
+d22112
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d1-20323
+d2321
+pythia id particle: 443
+d1213
+d2223
+pythia id particle: 443
+d1311
+d2211
+pythia id particle: 443
+d1223
+d2-211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1213
+d2-213
+pythia id particle: 443
+d1331
+d2-211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-211
+d2-2112
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1-211
+d2223
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-211
+d2223
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d12212
+d2-213
+pythia id particle: 443
+d1313
+d2-315
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1323
+d2113
+pythia id particle: 443
+d1-311
+d2321
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1211
+d2113
+pythia id particle: 443
+d1-3212
+d23112
+pythia id particle: 443
+d1331
+d2-213
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1-2212
+d23122
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1223
+d2-321
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-213
+d2221
+pythia id particle: 443
+d1-211
+d2223
+pythia id particle: 443
+d1223
+d2-311
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1331
+d2221
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d1-2112
+d22112
+pythia id particle: 443
+d1321
+d2221
+pythia id particle: 443
+d1223
+d2-313
+pythia id particle: 443
+d1111
+d2-311
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1211
+d21114
+pythia id particle: 443
+d1-323
+d2325
+pythia id particle: 443
+d1111
+d21114
+pythia id particle: 443
+d1-211
+d2-313
+pythia id particle: 443
+d12212
+d2-211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-211
+d22224
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1111
+d2-2112
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1213
+d2-321
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1-213
+d2223
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d1223
+d2223
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-311
+d2221
+pythia id particle: 443
+d1113
+d2-2212
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1311
+d2-311
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1213
+d2-213
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1221
+d2113
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1111
+d2-2212
+pythia id particle: 443
+d1-2212
+d22112
+pythia id particle: 443
+d110113
+d2111
+pythia id particle: 443
+d1-311
+d2311
+pythia id particle: 443
+d1311
+d2111
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1223
+d2-2212
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1211
+d2-213
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1-3112
+d23312
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-213
+d2-311
+pythia id particle: 443
+d1223
+d2113
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d1113
+d2221
+pythia id particle: 443
+d1-323
+d2325
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1221
+d2311
+pythia id particle: 443
+d1213
+d2221
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1111
+d2-321
+pythia id particle: 443
+d1-323
+d2321
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-2212
+d22212
+pythia id particle: 443
+d1211
+d2-2212
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1311
+d2-313
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1221
+d2211
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1-213
+d2221
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d1-323
+d2323
+pythia id particle: 443
+d1313
+d2111
+pythia id particle: 443
+d1-311
+d2311
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-313
+d2311
+pythia id particle: 443
+d1223
+d2211
+pythia id particle: 443
+d1333
+d2335
+pythia id particle: 443
+d1-321
+d2323
+pythia id particle: 443
+d1-323
+d2311
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1-211
+d2-2112
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-311
+d2333
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d13212
+d2-211
+pythia id particle: 443
+d1-323
+d2325
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1221
+d2111
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1113
+d2221
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d1211
+d2223
+pythia id particle: 443
+d1311
+d2111
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1111
+d2221
+pythia id particle: 443
+d1221
+d2223
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1113
+d22214
+pythia id particle: 443
+d1321
+d2-323
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1213
+d2-321
+pythia id particle: 443
+d1-211
+d2-2112
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1111
+d2-323
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d1221
+d2213
+pythia id particle: 443
+d1111
+d2221
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d12112
+d2211
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1-321
+d2323
+pythia id particle: 443
+d1-323
+d2325
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1-2112
+d22212
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1-211
+d2-313
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1213
+d2221
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1323
+d2-211
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1313
+d2211
+pythia id particle: 443
+d1-2112
+d22212
+pythia id particle: 443
+d1223
+d2-211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1223
+d2111
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1113
+d2113
+pythia id particle: 443
+d1113
+d2111
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d13324
+d2-3324
+pythia id particle: 443
+d1223
+d2211
+pythia id particle: 443
+d1111
+d2-321
+pythia id particle: 443
+d1211
+d2223
+pythia id particle: 443
+d1-215
+d2213
+pythia id particle: 443
+d1333
+d2221
+pythia id particle: 443
+d1221
+d2-211
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1111
+d2223
+pythia id particle: 443
+d1-2212
+d22212
+pythia id particle: 443
+d1113
+d2211
+pythia id particle: 443
+d1-321
+d2313
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1111
+d2-321
+pythia id particle: 443
+d1-3222
+d23122
+pythia id particle: 443
+d1323
+d2111
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1221
+d2113
+pythia id particle: 443
+d1-213
+d2211
+
+ Pythia::next(): 9000 events have been generated 
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1111
+d2213
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d1221
+d2-321
+pythia id particle: 443
+d1211
+d2221
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1-213
+d2213
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1-323
+d2311
+pythia id particle: 443
+d1323
+d2-211
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1311
+d2211
+pythia id particle: 443
+d1311
+d2331
+pythia id particle: 443
+d1321
+d2223
+pythia id particle: 443
+d1111
+d2-321
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1323
+d2111
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d13112
+d2-3112
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1-2212
+d22112
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d12112
+d2211
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1213
+d2113
+pythia id particle: 443
+d12224
+d2-2224
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1311
+d2-313
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d110213
+d2-211
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1-311
+d2321
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1223
+d2221
+pythia id particle: 443
+d1113
+d2211
+pythia id particle: 443
+d1-2212
+d22212
+pythia id particle: 443
+d1-2212
+d22212
+pythia id particle: 443
+d1223
+d2223
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1-213
+d2-2112
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1113
+d2113
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d1311
+d2223
+pythia id particle: 443
+d1-2212
+d22112
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1-323
+d2311
+pythia id particle: 443
+d1-2212
+d22112
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1213
+d2113
+pythia id particle: 443
+d1-213
+d2-311
+pythia id particle: 443
+d1-311
+d2311
+pythia id particle: 443
+d1-10213
+d2211
+pythia id particle: 443
+d1-321
+d2323
+pythia id particle: 443
+d1-211
+d2223
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1333
+d2331
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1223
+d2221
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1113
+d2-321
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1211
+d2223
+pythia id particle: 443
+d1211
+d2113
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1111
+d2211
+pythia id particle: 443
+d12212
+d2-3222
+pythia id particle: 443
+d1221
+d2323
+pythia id particle: 443
+d12112
+d2-2214
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1111
+d22212
+pythia id particle: 443
+d1221
+d2113
+pythia id particle: 443
+d1223
+d2-311
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d1111
+d2-311
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1221
+d2111
+pythia id particle: 443
+d1321
+d2223
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1213
+d2-213
+pythia id particle: 443
+d1-211
+d2-313
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1113
+d2-213
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d1211
+d2223
+pythia id particle: 443
+d1-2212
+d22212
+pythia id particle: 443
+d1-323
+d2325
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d1113
+d2-211
+pythia id particle: 443
+d1111
+d22214
+pythia id particle: 443
+d1113
+d2223
+pythia id particle: 443
+d1313
+d2111
+pythia id particle: 443
+d1331
+d2-211
+pythia id particle: 443
+d1321
+d2-211
+pythia id particle: 443
+d1223
+d2111
+pythia id particle: 443
+d1221
+d2-211
+pythia id particle: 443
+d1223
+d2111
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1223
+d2-211
+pythia id particle: 443
+d1223
+d2213
+pythia id particle: 443
+d1-211
+d2-313
+pythia id particle: 443
+d1-213
+d2213
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1321
+d2-213
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-211
+d2-311
+pythia id particle: 443
+d1211
+d2-2212
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1221
+d2-321
+pythia id particle: 443
+d1221
+d2-211
+ PYTHIA Error in ParticleDecays::decay: failed to find workable decay channel  
+pythia id particle: 443
+d1221
+d2111
+pythia id particle: 443
+d12112
+d2111
+pythia id particle: 443
+d1113
+d2211
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1333
+d2323
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d12112
+d2211
+pythia id particle: 443
+d1113
+d2211
+pythia id particle: 443
+d1-323
+d2325
+pythia id particle: 443
+d1-2212
+d23122
+pythia id particle: 443
+d1-321
+d2323
+pythia id particle: 443
+d1-2212
+d22212
+pythia id particle: 443
+d1321
+d23222
+pythia id particle: 443
+d1223
+d2113
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1223
+d2223
+pythia id particle: 443
+d1323
+d2-211
+pythia id particle: 443
+d1-211
+d2113
+pythia id particle: 443
+d1-2112
+d22112
+pythia id particle: 443
+d1213
+d2-211
+pythia id particle: 443
+d1113
+d2113
+pythia id particle: 443
+d1211
+d21114
+pythia id particle: 443
+d1-321
+d2311
+pythia id particle: 443
+d1223
+d2211
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1-1114
+d22112
+pythia id particle: 443
+d1221
+d2-213
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1-3322
+d23212
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1213
+d2-213
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1225
+d2223
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-321
+d2313
+pythia id particle: 443
+d1213
+d21114
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d110113
+d2111
+pythia id particle: 443
+d1211
+d2113
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1221
+d2111
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1211
+d2113
+pythia id particle: 443
+d1-213
+d22212
+pythia id particle: 443
+d1223
+d2213
+pythia id particle: 443
+d12212
+d2-321
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d1211
+d2-2212
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1-211
+d2213
+pythia id particle: 443
+d1441
+d222
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1111
+d2-213
+pythia id particle: 443
+d1225
+d2223
+pythia id particle: 443
+d1-321
+d2321
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-311
+d2311
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1223
+d2221
+pythia id particle: 443
+d1323
+d2-325
+pythia id particle: 443
+d1-323
+d2313
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1113
+d2213
+pythia id particle: 443
+d1221
+d2-211
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1111
+d2111
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1-311
+d2311
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-213
+d2111
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-211
+d2111
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-311
+d2321
+pythia id particle: 443
+d1323
+d2-211
+pythia id particle: 443
+d1-211
+d2-311
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1111
+d2113
+pythia id particle: 443
+d1113
+d2213
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1213
+d2111
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1-311
+d2321
+pythia id particle: 443
+d12212
+d2-211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1-213
+d2211
+pythia id particle: 443
+d1-211
+d2-2112
+pythia id particle: 443
+d1113
+d2211
+pythia id particle: 443
+d1-323
+d2313
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1111
+d2-211
+pythia id particle: 443
+d1211
+d2-211
+pythia id particle: 443
+d1211
+d2111
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1223
+d2331
+pythia id particle: 443
+d1111
+d2-2214
+pythia id particle: 443
+d1225
+d2223
+pythia id particle: 443
+d113
+d2-13
+mu1_pt:13
+mu2_pt:13
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1443
+d2443
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d1321
+d2111
+pythia id particle: 443
+d1-211
+d2211
+pythia id particle: 443
+d111
+d2-11
+pythia id particle: 443
+d1111
+d2223
+
+ *-------  PYTHIA Event and Cross Section Statistics  -------------------------------------------------------------*
+ |                                                                                                                 |
+ | Subprocess                                    Code |            Number of events       |      sigma +- delta    |
+ |                                                    |       Tried   Selected   Accepted |     (estimated) (mb)   |
+ |                                                    |                                   |                        |
+ |-----------------------------------------------------------------------------------------------------------------|
+ |                                                    |                                   |                        |
+ | g g -> ccbar(3S1)[3S1(1)] g                    401 |         473        108        108 |   1.097e-02  6.093e-04 |
+ | g g -> ccbar(3S1)[3S1(8)] g                    402 |        4718        186        186 |   2.354e-02  8.418e-04 |
+ | q g -> ccbar(3S1)[3S1(8)] q                    403 |        1177         49         49 |   6.264e-03  4.550e-04 |
+ | q qbar -> ccbar(3S1)[3S1(8)] g                 404 |           4          1          1 |   9.973e-05  9.973e-05 |
+ | g g -> ccbar(3S1)[1S0(8)] g                    405 |        3283        180        180 |   2.442e-02  8.579e-04 |
+ | q g -> ccbar(3S1)[1S0(8)] q                    406 |         699         38         38 |   4.869e-03  3.867e-04 |
+ | q qbar -> ccbar(3S1)[1S0(8)] g                 407 |           0          0          0 |   0.000e+00  0.000e+00 |
+ | g g -> ccbar(3S1)[3PJ(8)] g                    408 |        5926        363        363 |   4.517e-02  1.163e-03 |
+ | q g -> ccbar(3S1)[3PJ(8)] q                    409 |        1238         81         81 |   1.029e-02  5.840e-04 |
+ | q qbar -> ccbar(3S1)[3PJ(8)] g                 410 |           2          1          1 |   3.256e-05  3.256e-05 |
+ | g g -> ccbar(3PJ)[3PJ(1)] g                    411 |      153362       7157       7157 |   9.005e-01  4.898e-03 |
+ | q g -> ccbar(3PJ)[3PJ(1)] q                    412 |       32165       1624       1624 |   2.055e-01  2.477e-03 |
+ | q qbar -> ccbar(3PJ)[3PJ(1)] g                 413 |          26          0          0 |   0.000e+00  0.000e+00 |
+ | g g -> ccbar(3PJ)[3S1(8)] g                    414 |        1722         67         67 |   8.384e-03  5.275e-04 |
+ | q g -> ccbar(3PJ)[3S1(8)] q                    415 |         424         12         12 |   2.166e-03  2.754e-04 |
+ | q qbar -> ccbar(3PJ)[3S1(8)] g                 416 |           1          0          0 |   0.000e+00  0.000e+00 |
+ | g g -> ccbar(3DJ)[3DJ(1)] g                    417 |          16          2          2 |   1.185e-04  3.901e-05 |
+ | g g -> ccbar(3DJ)[3PJ(8)] g                    418 |        1731         99         99 |   1.223e-02  6.173e-04 |
+ | q g -> ccbar(3DJ)[3PJ(8)] q                    419 |         384         29         29 |   2.906e-03  2.967e-04 |
+ | q qbar -> ccbar(3DJ)[3PJ(8)] g                 420 |           1          0          0 |   0.000e+00  0.000e+00 |
+ | g g -> double ccbar(3S1)[3S1(1)]               421 |           3          0          0 |   0.000e+00  0.000e+00 |
+ | q qbar -> double ccbar(3S1)[3S1(1)]            422 |           0          0          0 |   0.000e+00  0.000e+00 |
+ | g g -> ccbar(3S1)[3S1(1)] gamma                441 |          20          3          3 |   4.382e-04  1.403e-04 |
+ |                                                    |                                   |                        |
+ | sum                                                |      207375      10000      10000 |   1.258e+00  5.903e-03 |
+ |                                                                                                                 |
+ *-------  End PYTHIA Event and Cross Section Statistics ----------------------------------------------------------*
+
+ *-------  PYTHIA Error and Warning Messages Statistics  ----------------------------------------------------------* 
+ |                                                                                                                 | 
+ |  times   message                                                                                                | 
+ |                                                                                                                 | 
+ |      2   Error in ParticleDecays::decay: failed to find workable decay channel                                  | 
+ |      7   Error in Pythia::next: hadronLevel failed; try again                                                   | 
+ |      7   Error in StringFragmentation::fragment: stuck in joining                                               | 
+ |      1   Warning in PhaseSpace2to2tauyz::trialKin: maximum for cross section violated                           | 
+ |      3   Warning in Pythia::check: energy-momentum not quite conserved                                          | 
+ |      9   Warning in Pythia::check: not quite matched particle energy/momentum/mass                              | 
+ |      5   Warning in SimpleSpaceShower::pT2nextQCD: weight above unity                                           | 
+ |     29   Warning in StringFragmentation::fragmentToJunction: bad convergence junction rest frame                | 
+ |      1   Warning in TauDecays::decay: unknown correlated tau production, assuming from unpolarized photon       | 
+ |                                                                                                                 | 
+ *-------  End PYTHIA Error and Warning Messages Statistics  ------------------------------------------------------* 
